@@ -1,0 +1,19 @@
+// shortcut for Spanish to English (shift option cmd ])
+
+#import 'translateCommon.js'
+
+log(scriptPath);
+
+var layer = selection[0];
+
+var text = [layer stringValue];
+
+var toTranslate = {
+  'source' : 'en',
+  'target' : 'es',
+  'text' : text
+}
+
+var translation = translate(toTranslate);
+
+[layer setStringValue:translation];
