@@ -1,5 +1,8 @@
 #import 'key.js'
 
+// Thanks to Jim Rutherford for pointing me in the right direction on this
+// https://github.com/jimrutherford/Random-User/blob/master/Random%20User/randomUserCommon.js
+
 function translate(toTranslate) {
 
   var encodedText = encodeURIComponent(toTranslate.text);
