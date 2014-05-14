@@ -1,7 +1,4 @@
-var key = [doc askForUserInput:"Enter your API key..." initialValue:""];
+var TRANSLATE_API_KEY = [doc askForUserInput:"Enter your API key..." initialValue:""];
 
-var keyVariable = 'key = key=\'' + key + '\'';
-log(keyVariable);
-
-var path = scriptPath.replace('_Enter Key.sketchplugin','') + 'key.js';
-[[keyVariable dataUsingEncoding:NSUTF8StringEncoding] writeToFile:path atomically:true];
+var defaults = [NSUserDefaults standardUserDefaults];
+[defaults setObject:TRANSLATE_API_KEY forKey:"TRANSLATE_API_KEY"];

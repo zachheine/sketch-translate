@@ -1,1 +1,0 @@
-key = 'key=YOUR_KEY_HERE';
